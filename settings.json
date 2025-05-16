@@ -1,19 +1,31 @@
 {
-    "WindowSize": {
-        "Width": 0,
-        "Hight": 0
-    },
-    "Bot": {
-        "IsWhiteBot": false,
-        "IsBlackBot": true,
-        "WhiteBotLevel": 0,
-        "BlackBotLevel": 5,
-        "BotScoringType": "NumberAndPotential",
-        "BotDelayMS": 0,
-        "NoRandom": false,
-        "Optimization": "O1"
-    },
-    "Game": {
-        "MaxNumTurns": 120
-    }
+  "//WindowSize": "Размеры окна (в пикселях)",
+  "WindowSize": {
+    "Width": 500,
+    "Hight": 500
+  },
+  "//bot": "Параметры ИИ",
+  "Bot": {
+    "//IsWhiteBlackBot": "Если обе переменные true — играют два ИИ, если обе false — играют два человека",
+    "//IsWhiteBot": "Белыми управляет ИИ",
+    "IsWhiteBot": false,
+    "//IsBlackBot": "Чёрными управляет ИИ",
+    "IsBlackBot": true,
+    "//WhiteBotLevel": "Сложность ИИ для белых (0–2: легко, 3–5: средне, 6–12: сложно)",
+    "WhiteBotLevel": 5,
+    "//BlackBotLevel": "Сложность ИИ для чёрных (0–2: легко, 3–5: средне, 6–12: сложно)",
+    "BlackBotLevel": 0,
+    "//BotScoringType": "Оценка хода: только количество шашек или с учётом позиции",
+    "BotScoringType": "NumberAndPotential",
+    "//BotDelayMS": "Задержка перед ходом ИИ (мс)",
+    "BotDelayMS": 0,
+    "//NoRandom": "ИИ работает предсказуемо (без случайности)",
+    "NoRandom": false,
+    "//Optimization": "O0 — без оптимизации (макс. уровень 7), O1 — с отсечением слабых ходов (до 12), O2 — быстрый режим (временно отключён)",
+    "Optimization": "O1"
+  },
+  "Game": {
+    "//MaxNumTurns": "Ограничение на количество ходов в партии",
+    "MaxNumTurns": 120
+  }
 }

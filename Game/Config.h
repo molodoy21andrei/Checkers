@@ -8,11 +8,13 @@ using json = nlohmann::json;
 class Config
 {
   public:
+    // При создании объекта Config() сразу загружает настройки из файла settings.json
     Config()
     {
-        reload();
+      reload();
     }
 
+    // Загружает JSON-файл settings.json в переменную config
     void reload()
     {
         std::ifstream fin(project_path + "settings.json");
